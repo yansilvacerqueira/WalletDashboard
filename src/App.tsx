@@ -1,11 +1,13 @@
-import React from 'react';
+import { Router } from "Router";
+import { GlobalStyles } from "styles/GlobalStyle";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <p>WalletDashBoard</p>
-    </div>
+    <>
+      <GlobalStyles />
+      <Router />
+    </>
   );
-}
+};
 
 export default App;
