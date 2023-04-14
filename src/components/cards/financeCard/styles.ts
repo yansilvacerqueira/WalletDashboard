@@ -24,6 +24,10 @@ export const Container = styled.div`
   position: relative;
   overflow: hidden;
   animation: ${animate} 0.5s;
+  color: white;
+  & + & {
+    margin-left: 68px;
+  }
 
   > img {
     height: 110%;

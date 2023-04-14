@@ -25,7 +25,7 @@ export const SideBar = () => {
       key: "2",
       icon: <FileOutlined />,
       label: "Teste",
-      onClick: () => navigate("/Expenses"),
+      onClick: () => navigate("/Records"),
     },
     {
       key: "3",
@@ -43,6 +43,9 @@ export const SideBar = () => {
   const [collapsed, setCollapsed] = useState(false);
   return (
     <Sider
+      breakpoint="lg"
+      collapsedWidth={0}
+      style={{ background: "#002568" }}
       collapsible
       collapsed={collapsed}
       onCollapse={(value) => setCollapsed(value)}
@@ -56,6 +59,7 @@ export const SideBar = () => {
       />
       <Menu
         theme="dark"
+        style={{ background: "#002568", color: "white" }}
         defaultSelectedKeys={["1"]}
         mode="inline"
         items={items}

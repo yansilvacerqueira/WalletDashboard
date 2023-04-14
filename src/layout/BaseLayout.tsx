@@ -12,13 +12,12 @@ const BaseLayout = ({ children }: any) => {
       <SideBar/>
       <Layout className="site-layout">
         <MyHeader title="Dashboard"/>
-        <Content style={{ margin: "0 16px" }}>
+        <Content style={{ display: "flex", alignItems: "center", justifyContent:"center" }}>
           <div
             style={{
-              marginTop: 24,
-              padding: 24,
+              marginTop: 56,
               minHeight: "100%",
-              background: "#bcbcbc",
+              width: "70%",
             }}
           >
             {children}
